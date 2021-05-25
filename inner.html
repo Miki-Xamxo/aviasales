@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авиасейлс</title>
+  <link rel="stylesheet" href="./inner.css">
+</head>
+<body>
+  <h1>Авиасейлс</h1>
+  <main>
+    <div class="wrapper">
+      <form class="form-search">
+        <div class="wrapper-search">
+          <div class="form">
+          <div class=""></div>
+          <div class="input">
+            <label>Откуда
+              <!-- <div class="input-module"> -->
+                <input class="modal where-fly-from" type="text" required>
+              <!-- </div> -->
+              </label>
+            <ul class="list list-cities-form">
+        
+            </ul>
+          </div>
+          <!--input-->
+          <div class="input">
+            <label>Куда
+              <!-- <div class="input-module"> -->
+                <input class="modal where-fly" type="text" required>
+              <!-- </div> -->
+              </label>
+            <ul class="list list-cities-to">
+    
+            </ul>
+          </div> <!--input-->
+          <div class="input input-cities-from">
+            <label>Туда
+              <div class="input-date input-module">
+                <input class="modal input-date-depart" type="date" required>
+              </div>
+            </label>     
+          </div> <!--input-->
+          <div class="input input-cities-from">
+            <label>Обратно
+              <div class="input-module">
+                <input class="modal back-input-date-depart" type="date"  required>
+                <button class="trip-duration-field-clear" type="button"><svg width="24" height="24" viewBox="0 0 24 24"
+                    fill="currentColor" data-test-element="icon" class="_icon_icon_2djOW" aria-hidden="true">
+                    <path
+                      d="M17.85 4.369A1.26 1.26 0 1119.63 6.15L13.781 12l5.85 5.85a1.26 1.26 0 11-1.781 1.781L12 13.781l-5.85 5.85A1.26 1.26 0 114.37 17.85l5.85-5.85-5.85-5.85A1.26 1.26 0 116.15 4.37l5.85 5.85 5.85-5.85z">
+                    </path>
+                  </svg></button>
+              </div>
+              </label>
+          </div> <!--input-->
+          <div class="input input-passenger">
+            <label>Пассажиры
+              <div class="input-module avia-form-passengers">
+                <span class="modal additional-fields-label">1 пассажир</span>
+                <span class="exp in">
+                  <svg width="10" height="14" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="expander">
+                    <mask id="path-1-inside-1" fill="white">
+                      <path
+                        d="M4.94967 10.4497L-8.07047e-05 5.5L0.707026 4.79289L4.94967 9.03553L9.19231 4.79289L9.89941 5.5L4.94967 10.4497Z">
+                      </path>
+                    </mask>
+                    <path
+                      d="M4.94967 10.4497L-8.07047e-05 5.5L0.707026 4.79289L4.94967 9.03553L9.19231 4.79289L9.89941 5.5L4.94967 10.4497Z"
+                      fill="#262626">
+                    </path>
+                    <path
+                      d="M4.94967 10.4497L4.24256 11.1569L4.94967 11.864L5.65677 11.1569L4.94967 10.4497ZM-8.07047e-05 5.5L-0.707187 4.79289L-1.41429 5.5L-0.707187 6.20711L-8.07047e-05 5.5ZM0.707026 4.79289L1.41413 4.08579L0.707026 3.37868L-8.07047e-05 4.08579L0.707026 4.79289ZM4.94967 9.03553L4.24256 9.74264L4.94967 10.4497L5.65677 9.74264L4.94967 9.03553ZM9.19231 4.79289L9.89941 4.08579L9.19231 3.37868L8.4852 4.08579L9.19231 4.79289ZM9.89941 5.5L10.6065 6.20711L11.3136 5.5L10.6065 4.79289L9.89941 5.5ZM5.65677 9.74264L0.707026 4.79289L-0.707187 6.20711L4.24256 11.1569L5.65677 9.74264ZM0.707026 6.20711L1.41413 5.5L-8.07047e-05 4.08579L-0.707187 4.79289L0.707026 6.20711ZM-8.07047e-05 5.5L4.24256 9.74264L5.65677 8.32843L1.41413 4.08579L-8.07047e-05 5.5ZM5.65677 9.74264L9.89941 5.5L8.4852 4.08579L4.24256 8.32843L5.65677 9.74264ZM8.4852 5.5L9.19231 6.20711L10.6065 4.79289L9.89941 4.08579L8.4852 5.5ZM9.19231 4.79289L4.24256 9.74264L5.65677 11.1569L10.6065 6.20711L9.19231 4.79289Z"
+                      fill="#979797" mask="url(#path-1-inside-1)">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </label>
+            
+            <div class="passenger-list hide">
+              <div class="inner-wrap">
+                <div class="passengers-wrap">
+          
+                  <div class="passengers-row">
+                    <div class="passenger-title">
+                      <strong>Взрослые</strong>
+                      <small>Старше 12 лет</small>
+                    </div>
+                    <div class="passenger-control-wrap">
+                      <div class="tooltip-wrapper">
+                        <a class="passenger-control">
+                          <svg width="8" height="2" viewBox="0 0 8 2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h8v2H0z" fill="#FFF" fill-rule="evenodd"></path>
+                          </svg>
+                        </a>
+                      </div>
+                      <span class="passenger-value">1</span>
+                      <div class="tooltip-wrapper">
+                        <a class="passenger-control control">
+                          <svg width="8" height="8" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 3h3v2H5v3H3V5H0V3h3V0h2v3z" fill="#FFF" fill-rule="evenodd"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div> <!--passengers-row-->
+                  <div class="passengers-row">
+                    <div class="passenger-title">
+                      <strong>Дети</strong>
+                      <small>От 2 до 12 лет</small>
+                    </div>
+                    <div class="passenger-control-wrap">
+                      <div class="tooltip-wrapper">
+                        <a class="passenger-control">
+                          <svg width="8" height="2" viewBox="0 0 8 2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h8v2H0z" fill="#FFF" fill-rule="evenodd"></path>
+                          </svg>
+                        </a>
+                      </div>
+                      <span class="passenger-value">1</span>
+                      <div class="tooltip-wrapper">
+                        <a class="passenger-control control">
+                          <svg width="8" height="8" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 3h3v2H5v3H3V5H0V3h3V0h2v3z" fill="#FFF" fill-rule="evenodd"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div> <!--passengers-row-->
+          
+                  <div class="passengers-row">
+                    <div class="passenger-title">
+                      <strong>Младенцы</strong>
+                      <small>До 2 лет, без места</small>
+                    </div>
+                    <div class="passenger-control-wrap">
+                      <div class="tooltip-wrapper">
+                        <a class="passenger-control">
+                            <svg width="8" height="2" viewBox="0 0 8 2" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0h8v2H0z" fill="#FFF" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                      </div>
+                      <span class="passenger-value">1</span>
+                      <div class="tooltip-wrapper">
+                        <a class="passenger-control control">
+                            <svg width="8" height="8" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5 3h3v2H5v3H3V5H0V3h3V0h2v3z" fill="#FFF" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div> <!--passengers-row-->
+      
+                </div> <!--passengers-wrap-->
+              </div> <!--inner-wrap-->
+            </div> <!--passenger-list-->
+          </div> <!--input-->
+          <div class="wrapper-button">
+            <button class="button button-search">
+              <span class="button-search-text">Найти билеты</span>
+              <img src="./glo/img/plane.svg" alt="">
+            </button>
+          </div>
+          </div> <!--form-->
+          <!-- <div class="trip-duration-dropdown">
+            <div class="trip-duration-wrap">
+              <div class="trip-duration-tab">
+                <div class="trip-duration-btn">
+                  <span class="departure-date-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" data-test-element="icon" class="icon"
+                      aria-hidden="true">
+                      <path
+                        d="M11 11H7v4h4v-4zm5-9v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-1V2h-2zm3 18H5V9h14v11z">
+                      </path>
+                    </svg>
+                  </span>
+                  Выбрать даты
+                </div>
+              </div>
+              <div class="trip-duration-content">
+                <div class="trip-duration-content-head">
+                  <span class="trip-duration-content-title">Выберите дату отправления</span>
+                  <button class="trip-duration-cancel-departure">
+                    <span class="button-text">Обратный билет не нужен</span>
+                  </button>
+                </div> 
+                trip-duration-content-head
+                <div class="trip-duration__content-body">
+                  <div class="calendar-container">
+                    <div class="calendar-wrapper">
+                      <div class="calendar-navbar">
+                        <button class="calendar-navbar-button in">
+                            <span class="calendar-navbar-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 14">
+                                <path fill="currentColor" d="M1.8 0L0 1.75 5.4 7 0 12.25 1.8 14 9 7 1.8 0z"></path>
+                              </svg>
+                            </span>
+                        </button>
+                        <div class="calendar-navbar-tooltip-wrapper">
+                          <button class="calendar-navbar-button" type="button">
+                            <span class="calendar-navbar-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 14">
+                                <path fill="currentColor" d="M1.8 0L0 1.75 5.4 7 0 12.25 1.8 14 9 7 1.8 0z"></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calendar-months">
+                      <div class="calendar-month">
+                        <div class="calendar-caption"></div>
+                        <div class="calendar-weekdays"></div>
+                        <div class="calendar-weeds-body"></div>
+                      </div>
+                      <div class="calendar-month"></div>
+                    </div>
+                    </div>
+                  </div>
+                </div> 
+                trip-duration__content-body
+              </div> 
+              trip-duration-content
+            </div> 
+            trip-duration-wrap
+          </div> 
+          trip-duration-dropdown -->
+        </div> <!--wrapper-search-->
+      </form> <!--form-search-->
+    </div> <!--wrapper-->
+
+
+
+  </main>
+    <script src="./inner.js"></script>
+</body>
+</html>
